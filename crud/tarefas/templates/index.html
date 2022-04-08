@@ -1,0 +1,9 @@
+{% if tarefas %}
+    <ul>
+    {% for t in tarefas %}
+        <li><a >{{ t.nome }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Sem tarefas</p>
+{% endif %}
