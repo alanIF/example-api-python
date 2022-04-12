@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'sigprodutos.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db',
-        'USER': 'root',
-        'PASSWORD': '',
+        'NAME': 'sig_produtos',
+        'USER': 'postgres',
+        'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
