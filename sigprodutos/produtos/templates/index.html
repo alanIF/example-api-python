@@ -1,14 +1,16 @@
 {% if produtos %}
     <ul>
     {% for p in produtos %}
-        <li>{{p.id}}-{{ p.nome }} - {{ p.descricao}} - {{ p.preco }} - {{ p.imagem }}</li>
+        <li>{{p.id}}-{{ p.nome }} - {{ p.descricao}} - {{ p.preco }} - <img src="{{ p.imagem }}"/></li>
         <button class="button"><a href="">Edit</a></button>
     <button class="button"><a href="/produtos/delete/{{p.id}}">Delete</a></button>
     {% endfor %}
     
 
-    <li><a href="">Cadastrar</a></li>
+    <li><a href="new">Cadastrar</a></li>
     </ul>
 {% else %}
     <p>Sem Produtos</p>
+    <li><a href="new">Cadastrar</a></li>
+
 {% endif %}

@@ -1,0 +1,22 @@
+{% if new %}
+<form method="post" action="store">
+    {% csrf_token %}
+    <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Nome" name="nome">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Descrição" name="descricao">
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control"  placeholder="Preço" name="preco">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Link da Imagem" name="imagem">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+{% else %}
+    Atualizar
+
+{% endif %}
